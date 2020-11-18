@@ -52,10 +52,17 @@ for row in range(len(df_dev)):
   crop(Dev_Dir, Dev_Crop_Dir, df_dev, row)
 
 Dir = Train_Crop_Dir
-#Dir = Dev_Crop_Dir
 df_sum = pd.DataFrame([len(os.listdir(Dir + '/' + str(label_index[0]))), 
               len(os.listdir(Dir + '/' + str(label_index[1]))),
               len(os.listdir(Dir + '/' + str(label_index[2]))),
               len(os.listdir(Dir + '/' + str(label_index[3]))),
               len(os.listdir(Dir + '/' + str(label_index[4])))], labels)
-print(df_sum)
+print('Train', df_sum)
+
+Dir = Dev_Crop_Dir
+df_sum = pd.DataFrame([len(os.listdir(Dir + '/' + str(label_index[0]))), 
+              len(os.listdir(Dir + '/' + str(label_index[1]))),
+              len(os.listdir(Dir + '/' + str(label_index[2]))),
+              len(os.listdir(Dir + '/' + str(label_index[3]))),
+              len(os.listdir(Dir + '/' + str(label_index[4])))], labels)
+print('Val', df_sum)
