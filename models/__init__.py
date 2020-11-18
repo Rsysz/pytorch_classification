@@ -11,8 +11,8 @@ LOCAL_PRETRAINED = {
     'densenet121': home +'/weights/densenet121.pth',
     'densenet169': home +'/weights/densenet169.pth',
     'moblienetv2': home +'/weights/mobilenetv2.pth',
-    'efficientnet-b7': home + '/weights/efficientnet-b7.pth',
-    'efficientnet-b8': home + '/weights/efficientnet-b8.pth'
+    'efficientnet-b7': None,
+    'efficientnet-b8': None
 }
 
 model_urls = {

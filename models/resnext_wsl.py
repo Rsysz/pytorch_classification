@@ -9,14 +9,14 @@ dependencies = ['torch', 'torchvision']
 from torch.hub import load_state_dict_from_url
 from models.vision import ResNet, Bottleneck
 
-
+'''
 model_urls = {
     'resnext101_32x8d': 'https://download.pytorch.org/models/ig_resnext101_32x8-c38310e5.pth',
     'resnext101_32x16d': 'https://download.pytorch.org/models/ig_resnext101_32x16-c6f796b0.pth',
     'resnext101_32x32d': 'https://download.pytorch.org/models/ig_resnext101_32x32-e4b90b00.pth',
     'resnext101_32x48d': 'https://download.pytorch.org/models/ig_resnext101_32x48-3e41cc8a.pth',
 }
-
+'''
 
 def _resnext(arch, block, layers, pretrained, progress, **kwargs):
     model = ResNet(block, layers, **kwargs)

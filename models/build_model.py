@@ -8,7 +8,7 @@ from torch.hub import load_state_dict_from_url
 import torch.nn as nn
 import torch
 import torchvision
-# from models import resnet101, densenet121, densenet169, resnet50, mobilenet_v2
+from models import resnet101, densenet121, densenet169, resnet50, mobilenet_v2
 # from models import resnext101_32x8d_wsl, resnext101_32x16d_wsl, resnext101_32x32d_wsl, resnext101_32x48d_wsl
 from models import EfficientNet
 from models import LOCAL_PRETRAINED, model_urls
