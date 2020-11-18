@@ -18,7 +18,7 @@ WEIGHT_DECAY = 5e-4
 MOMENTUM = 0.9
 LR = 1e-3
 
-model_name = 'efficientnet-b7'
+model_name = 'resnet50'
 
 from models import Resnet50, Resnet101, Resnext101_32x8d,Resnext101_32x16d, Densenet121, Densenet169, Mobilenetv2, Efficientnet, Resnext101_32x32d, Resnext101_32x48d
 MODEL_NAMES = {
@@ -49,7 +49,7 @@ TEST_LABEL_DIR = BASE + 'test.txt'
 
 
 ##训练完成，权重文件的保存路径,默认保存在trained_model下
-TRAINED_MODEL = BASE + 'weights/efficientnet/epoch_100.pth'
+TRAINED_MODEL = BASE + 'weights/resnet50/epoch_100.pth'
 
 
 

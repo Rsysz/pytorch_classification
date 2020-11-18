@@ -6,7 +6,7 @@ LOCAL_PRETRAINED = {
     'resnext101_32x16d': home + '/weights/resnext101_32x16.pth',
     'resnext101_32x48d': home + '/weights/resnext101_32x48.pth',
     'resnext101_32x32d': home + '/weights/resnext101_32x32.pth',
-    'resnet50': home +'/weights/resnet50.pth',
+    'resnet50': None,
     'resnet101': home +'/weights/resnet101.pth',
     'densenet121': home +'/weights/densenet121.pth',
     'densenet169': home +'/weights/densenet169.pth',
