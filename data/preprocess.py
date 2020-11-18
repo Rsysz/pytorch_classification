@@ -2,7 +2,7 @@ import os
 import glob
 
 if __name__ == '__main__':
-  BASE = './pytorch_classification/data/'
+  BASE = './data/'
   traindata_path = BASE + 'train'
   valdata_path = BASE + 'val'
 

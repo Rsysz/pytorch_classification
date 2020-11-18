@@ -53,8 +53,9 @@ for row in range(len(df_dev)):
 
 Dir = Train_Crop_Dir
 #Dir = Dev_Crop_Dir
-pd.DataFrame([len(os.listdir(Dir + '/' + str(label_index[0]))), 
+df_sum = pd.DataFrame([len(os.listdir(Dir + '/' + str(label_index[0]))), 
               len(os.listdir(Dir + '/' + str(label_index[1]))),
               len(os.listdir(Dir + '/' + str(label_index[2]))),
               len(os.listdir(Dir + '/' + str(label_index[3]))),
               len(os.listdir(Dir + '/' + str(label_index[4])))], labels)
+print(df_sum)
